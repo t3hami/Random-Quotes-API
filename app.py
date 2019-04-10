@@ -15,7 +15,7 @@ class JSONEncoder(json.JSONEncoder):
 app = Flask(__name__)
 
 app.config['MONGO_DBNAME'] = 'university'
-app.config['MONGO_URI'] = 'mongodb://tehami:123456seven@ds117858.mlab.com:17858/university'
+app.config['MONGO_URI'] = 'mongodb://<username>:<password>@ds117858.mlab.com:17858/university'
 
 mongo = PyMongo(app)
 
